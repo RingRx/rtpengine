@@ -44,7 +44,7 @@ static int null_crypt_rtcp(struct crypto_context *c, struct rtcp_packet *r, str 
 struct crypto_suite __crypto_suites[] = {
 	{
 		.name			= "AEAD_AES_256_GCM",
-		.dtls_name		= "SRTP_AEAD_AES_256_GCM",
+		/* .dtls_name		= "SRTP_AEAD_AES_256_GCM", */
 		.master_key_len		= 32,
 		.master_salt_len	= 12,
 		.session_key_len	= 32,
@@ -67,7 +67,7 @@ struct crypto_suite __crypto_suites[] = {
 	},
 	{
 		.name			= "AEAD_AES_128_GCM",
-		.dtls_name		= "SRTP_AEAD_AES_128_GCM",
+		/*.dtls_name		= "SRTP_AEAD_AES_128_GCM",*/
 		.master_key_len		= 16,
 		.master_salt_len	= 12,
 		.session_key_len	= 16,
